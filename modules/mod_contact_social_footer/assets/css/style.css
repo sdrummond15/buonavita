@@ -1,0 +1,77 @@
+#contact-social-footer {}
+
+.logo-footer {
+    display: table;
+    margin: 0 auto 30px auto;
+}
+
+.logo-footer img {
+    filter: grayscale(100%) invert(100%) brightness(200%);
+    width: 75%;
+    display: table;
+    margin: auto;
+}
+
+#contact-social-footer p {
+    text-align: center;
+}
+
+#contact-social-footer a, #contact-social-footer p a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#contact-social-footer a:hover, #contact-social-footer p a:hover {
+    text-shadow: 0 0 8px rgba(131,69,0,0.9);
+}
+
+#contact-social-footer .phone, #contact-social-footer .email {
+    font-size: 24px;
+    text-align: center;
+}
+
+ul.contact-social-footer {
+    list-style: none;
+    display: table;
+    margin: 20px auto;
+    padding: 0;
+}
+
+ul.contact-social-footer.footer-contato {
+    margin: 0 auto;
+}
+
+ul.contact-social-footer.footer-contato li {
+    display: table;
+    margin: auto;
+}
+
+ul.contact-social-footer.footer-contato li a {
+    font-size: 16px;
+    display: table;
+}
+
+ul.contact-social-footer li {
+    float: left;
+    padding: 0 3px;
+}
+
+ul.contact-social-footer li a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul.contact-social-footer li a:hover {
+    color: #e8e8e8;
+}
+
+ul.contact-social-footer li a i {
+    font-size: 36px;
+    vertical-align: sub;
+}
+@media screen and (max-width:1200px) {
+    #contact-social-footer .phone, #contact-social-footer .email {
+        font-size: 20px;
+    }
+}
