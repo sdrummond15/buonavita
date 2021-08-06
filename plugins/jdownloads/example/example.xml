@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="jdownloads" method="upgrade">
+	<name>plg_jdownloads_example</name>
+        <author>Arno Betz</author>
+        <creationDate>2019-06-23</creationDate>
+        <copyright>Copyright (C) 2019 Arno Betz</copyright>
+        <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+        <authorEmail>info@jdownloads.com</authorEmail>
+        <authorUrl>www.jdownloads.com</authorUrl>
+        <version>3.9.0</version>
+	<description>PLG_JDOWNLOADS_EXAMPLE_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="example">example.php</filename>
+		<folder>language</folder>
+	</files>
+</extension>

@@ -65,7 +65,7 @@ JHtml::_('behavior.formvalidator');
 	</form>
 </div>
 <div>
-	<ul class="nav nav-tabs nav-stacked">
+	<ul class="nav-stacked">
 		<li>
 			<a href="<?php echo JRoute::_('index.php?option=com_users&view=reset'); ?>">
 				<?php echo JText::_('COM_USERS_LOGIN_RESET'); ?>

@@ -877,19 +877,18 @@ button.swiper-pagination-bullet {
 }
 
 .slider .swiper-container .swiper-slide .inner h2 {
-  max-width: 50%;
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 10px;
   color: #FFF;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 500;
+  text-align: center;
 }
 
 .slider .swiper-container .swiper-slide .inner p {
-  max-width: 40%;
   font-size: 24px;
-  font-family: 'Josefin Sans', 'Droid Sans', sans-serif, Helvetica, Arial;
   font-weight: 300;
+  text-align: center;
 }
 
 .slider .swiper-container .swiper-slide .inner.box-text-right .line-title, .slider .swiper-container .swiper-slide .inner.box-text-right h2, .slider .swiper-container .swiper-slide .inner.box-text-right p {
@@ -1000,10 +999,6 @@ button.swiper-pagination-bullet {
 }
 
 .line-title {
-  width: 200px;
-  height: 5px;
-  background-color: #FFF;
-  margin-bottom: 20px;
 }
 
 /* RESPONSIVE MEDIUM  FIXES */

@@ -26,12 +26,17 @@ ul.contact-social li:last-child {
 }
 
 ul.contact-social li a {
-    color: #FFF;
+    color: #2d6d54;
     font-weight: normal;
     text-decoration: none;
     font-size: 14px;
     display: table;
     line-height: 1;
+}
+
+
+ul.contact-social li a:hover{
+    color: #1a533d;
 }
 
 ul.contact-social li a.phone span {

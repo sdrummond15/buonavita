@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+        <field
+            name="images"
+            type="list"
+            label="COM_JDOWNLOADS_UNINSTALL_OPTIONS_IMAGES_LABEL"
+            description="COM_JDOWNLOADS_UNINSTALL_OPTIONS_IMAGES"
+            class="chzn-color-state"
+            size="1"
+            default="1">
+            <option
+                value="0">COM_JDOWNLOADS_YES</option>
+            <option
+                value="1">COM_JDOWNLOADS_NO</option>
+        </field>
+        <field
+            name="files"
+            type="list"
+            label="COM_JDOWNLOADS_UNINSTALL_OPTIONS_FILES_LABEL"
+            description="COM_JDOWNLOADS_UNINSTALL_OPTIONS_FILES"
+            class="chzn-color-state"
+            size="1"
+            default="1">
+            <option
+                value="0">COM_JDOWNLOADS_YES</option>
+            <option
+                value="1">COM_JDOWNLOADS_NO</option>
+        </field>
+        <field
+            name="tables"
+            type="list"
+            label="COM_JDOWNLOADS_UNINSTALL_OPTIONS_TABLES_LABEL"
+            description="COM_JDOWNLOADS_UNINSTALL_OPTIONS_TABLES"
+            class="chzn-color-state"
+            size="1"
+            default="1">
+            <option
+                value="0">COM_JDOWNLOADS_YES</option>
+            <option
+                value="1">COM_JDOWNLOADS_NO</option>
+        </field>		
+	</fieldset>
+</form>

@@ -26,14 +26,9 @@ JHtml::_('bootstrap.tooltip');
 			<div class="controls">
 				<?php if (!$params->get('usetext', 0)) : ?>
 					<div class="input-prepend">
-						<span class="add-on">
-							<span class="icon-user hasTooltip" title="<?php echo JText::_('MOD_LOGIN_VALUE_USERNAME'); ?>"></span>
-							<label for="modlgn-username" class="element-invisible"><?php echo JText::_('MOD_LOGIN_VALUE_USERNAME'); ?></label>
-						</span>
 						<input id="modlgn-username" type="text" name="username" class="input-small" tabindex="0" size="18" placeholder="<?php echo JText::_('MOD_LOGIN_VALUE_USERNAME'); ?>" />
 					</div>
 				<?php else : ?>
-					<label for="modlgn-username"><?php echo JText::_('MOD_LOGIN_VALUE_USERNAME'); ?></label>
 					<input id="modlgn-username" type="text" name="username" class="input-small" tabindex="0" size="18" placeholder="<?php echo JText::_('MOD_LOGIN_VALUE_USERNAME'); ?>" />
 				<?php endif; ?>
 			</div>
@@ -42,16 +37,9 @@ JHtml::_('bootstrap.tooltip');
 			<div class="controls">
 				<?php if (!$params->get('usetext', 0)) : ?>
 					<div class="input-prepend">
-						<span class="add-on">
-							<span class="icon-lock hasTooltip" title="<?php echo JText::_('JGLOBAL_PASSWORD'); ?>">
-							</span>
-								<label for="modlgn-passwd" class="element-invisible"><?php echo JText::_('JGLOBAL_PASSWORD'); ?>
-							</label>
-						</span>
 						<input id="modlgn-passwd" type="password" name="password" class="input-small" tabindex="0" size="18" placeholder="<?php echo JText::_('JGLOBAL_PASSWORD'); ?>" />
 					</div>
 				<?php else : ?>
-					<label for="modlgn-passwd"><?php echo JText::_('JGLOBAL_PASSWORD'); ?></label>
 					<input id="modlgn-passwd" type="password" name="password" class="input-small" tabindex="0" size="18" placeholder="<?php echo JText::_('JGLOBAL_PASSWORD'); ?>" />
 				<?php endif; ?>
 			</div>

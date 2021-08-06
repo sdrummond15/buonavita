@@ -22,12 +22,13 @@
 }
 
 #contact-social-footer a:hover, #contact-social-footer p a:hover {
-    text-shadow: 0 0 8px rgba(131,69,0,0.9);
+    text-shadow: 0 0 8px rgb(0, 0, 0);
 }
 
 #contact-social-footer .phone, #contact-social-footer .email {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 ul.contact-social-footer {

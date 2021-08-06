@@ -1,14 +1,35 @@
 #banner-int {
     width: 100%;
     display: table;
-    background: url("../../../../images/banners/banner_horizonte_cargo.jpg") no-repeat center;
-    background-size: cover;
-    background-position: bottom center;
+    position: relative;
 }
 
-#banner-int > div {
-    width: 100%;
+#banner-int .banner-img {
+    width: 60%;
+    height: 100%;
     display: table;
+    background-image: url("../../../../images/banners/buona_vita_banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#banner-int .banner-img.banner-fisioterapia{
+    background-image: url("../../../../images/banners/fisioterapia.jpg");
+}
+
+#banner-int .banner-fix{
+    width: 50%;
+    height: 100%;
+    display: table;
+    background-color: #3a8b6b;
+    position: absolute;
+    right: 0;
+    top: 0;
+    clip-path: polygon(150px 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .banner-int {
@@ -23,12 +44,14 @@
     position: absolute;
     right: 20px;
     bottom: 20px;
-    font-size: 50px;
+    font-size: 48px;
     color: #FFF;
     margin: 0;
     display: table;
-    max-width: 70%;
+    max-width: 400px;
     text-align: right;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 1200px) {

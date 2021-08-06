@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+
+    <fieldset addfieldpath="/administrator/components/com_jdownloads/models/fields"></fieldset>
+
+		<field name="id" 
+            type="hidden"
+            class="readonly" />
+
+		<field name="title" 
+            type="text" 
+			size="40" 
+            label="COM_JDOWNLOADS_REPORT_FILE_TITLE_LABEL"
+			description="" 
+            readonly="true" 
+            class="readonly" />
+
+        <field name="url_download" 
+            type="text" 
+            size="40" 
+            label="COM_JDOWNLOADS_REPORT_FILE_NAME_LABEL"
+            description="" 
+            readonly="true" 
+            class="readonly" />
+
+        <field name="catid" 
+            type="hidden"
+            class="readonly" />
+
+        <field name="cat_title" 
+            type="text" 
+            size="40" 
+            label="COM_JDOWNLOADS_REPORT_CATEGORY_NAME_LABEL"
+            description="" 
+            readonly="true" 
+            class="readonly" />
+
+        <field name="message"
+                type="textarea" 
+                rows="5"
+                cols="35" 
+                class="inputbox"
+                filter="safehtml"
+                label="COM_JDOWNLOADS_CUSTOMER_MESSAGE_LABEL" 
+                description="COM_JDOWNLOADS_CUSTOMER_MESSAGE_DESC" />
+                   
+        <field name="rating" 
+            type="list"
+            label="COM_JDOWNLOADS_CUSTOMER_RATING_LABEL"
+            description="COM_JDOWNLOADS_CUSTOMER_RATING_DESC"
+            class="inputbox"
+            size="1"
+            default="1">
+            <option
+                value="1">COM_JDOWNLOADS_CUSTOMER_RATING_EXCELENT</option>
+            <option
+                value="2">COM_JDOWNLOADS_CUSTOMER_RATING_GOOD</option>
+            <option
+                value="3">COM_JDOWNLOADS_CUSTOMER_RATING_ACCEPTABLE</option>
+            <option
+                value="1">COM_JDOWNLOADS_CUSTOMER_RATING_BAD</option>
+        </field>                          
+  
+        <field name="name"
+            type="text"
+            class="inputbox" 
+            size="40"            
+            filter="unset"
+            label="COM_JDOWNLOADS_CUSTOMER_NAME_LABEL"
+            description=""
+            readonly="false"  
+            required="true" />  
+
+        <field name="company"
+            type="text"
+            class="inputbox" 
+            size="40"            
+            filter="unset"
+            label="COM_JDOWNLOADS_CUSTOMER_COMPANY_LABEL"
+            description=""
+            readonly="false"  
+            required="false" /> 
+            
+        <field name="email"
+            type="text"
+            class="inputbox" 
+            size="40"            
+            filter="unset"
+            label="COM_JDOWNLOADS_CUSTOMER_EMAIL_LABEL"
+            description="" 
+            readonly="false" 
+            required="true" />
+  
+    </form>

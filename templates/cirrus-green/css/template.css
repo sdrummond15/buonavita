@@ -310,10 +310,14 @@ h6 {
 
 ol, ul {
     list-style-position: outside;
-    list-style-type: square;
+    list-style-type: circle;
     padding-left: 30px;
     margin-top: 6px;
     margin-bottom: 6px;
+}
+
+ol li, ul li{
+    margin-bottom: 3px;
 }
 
 hr {
@@ -350,23 +354,25 @@ hr {
     height: 100%;
 }
 
-#contact-form button.validate, #login-form input.button, #mailto-window button, #member-profile button.validate, #member-registration button.validate, #searchForm button, #user-registration button.validate, .btn, .login button, .logout button {
+#contact-form button.validate, #mailto-window button, #member-profile button.validate, #member-registration button.validate, #searchForm button, #user-registration button.validate, .btn {
     width: auto;
-    padding: 8px 20px 5px 20px;
+    padding: 8px 20px;
     float: right;
-    background-color: #004b81;
+    background-color: #225f47;
     color: #FFF;
     cursor: pointer;
     margin-bottom: 13px;
     border: 0;
     font-family: 'Montserrat';
-    font-size: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
     line-height: 1;
     border-radius: 0;
+    font-weight: 600;
 }
 
-#contact-form button.validate:hover, #login-form input.button:hover, #mailto-window button:hover, #member-profile button.validate:hover, #member-registration button.validate:hover, #searchForm button:hover, #user-registration button.validate:hover, .btn:hover, .login button:hover, .logout button:hover {
-    background-color: #003e6b;
+#contact-form button.validate:hover, #mailto-window button:hover, #member-profile button.validate:hover, #member-registration button.validate:hover, #searchForm button:hover, #user-registration button.validate:hover, .btn:hover {
+    background-color: #1c563f;
 }
 
 p.link-c {
@@ -493,33 +499,39 @@ p.link-c {
 #topmenu_wrap {
     width: 100%;
     background-color: #002a28;
-    margin-bottom: -30px;
+    margin-bottom: -23px;
 }
 
 #topmenu ul {
     padding: 0;
-    margin: 12px 0 0 0;
+    margin: 15px 0 0 0;
     list-style: none;
 }
 
 #topmenu span, #topmenu a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     display: block;
     color: #fff;
     text-decoration: none;
-    padding-bottom: 3px;
+    padding: 12px 0;
     text-transform: uppercase;
-    border-bottom: 1px solid transparent;
     cursor: pointer;
     line-height: 1.2;
+    width: 100%;
+    font-weight: 300;
 }
 
 #topmenu a:hover {
-    border-bottom: 1px solid #fff;
+    font-weight: 600;
 }
 
-#topmenu li.active a, #topmenu li.active a:hover {
+#topmenu span:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#topmenu li.active a, #topmenu li.active a:hover, #topmenu li.active span, #topmenu li.active span:hover, #topmenu li:hover span {
     color: #fff;
     text-decoration: none;
     font-family: 'Montserrat';
@@ -528,9 +540,6 @@ p.link-c {
 }
 
 #topmenu li {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
     flex: 1;
     text-align: center;
 }
@@ -540,9 +549,7 @@ p.link-c {
     font-size: 12px;
     width: 240px;
     left: -999em;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid #FFF;
-    margin-left: -30px;
+    background-color: #002a28;
     z-index: 100;
     margin-top: 0;
     max-height: 80vh;
@@ -564,17 +571,21 @@ p.link-c {
     width: 100%;
     padding: 10px;
     margin: 0;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 #topmenu li ul a:hover {
-    border: 0;
+    font-weight: 500;
 }
 
-#topmenu li.active ul a:hover {}
+#topmenu li.active ul li.active a, #topmenu li.active ul li.active a:hover, #topmenu li.active ul a:hover {
+    font-weight: 600;
+}
 
-#topmenu li.active ul a {}
+#topmenu li.active ul a {
+    font-weight: 300;
+}
 
 #topmenu li ul ul {
     margin: -39px 0 0 220px;
@@ -1128,6 +1139,21 @@ p.counter {
     padding: 10px 5px;
 }
 
+.moduletable-login h3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+#login-form {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
 #login-form fieldset.userdata {
     margin-bottom: 5px;
     margin-top: -15px;
@@ -1137,26 +1163,41 @@ p.counter {
     float: left;
 }
 
+#login-form .control-group {
+    margin-bottom: 10px;
+}
+
 #login-form ul {
-    margin-left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: table;
 }
 
 #login-form ul li {
-    border: 0;
-    line-height: 1.1em;
-    float: left;
-    width: 100%;
+    width: calc(50% - 5px);
+    display: inline-block;
+    margin-left: 10px;
+    text-align: right;
+}
+
+#login-form ul li:first-child {
+    margin: 0;
+    text-align: left;
+}
+
+#login-form ul li a {
+    font-size: 12px;
+    color: #FFF;
+    font-weight: 300;
 }
 
 #login-form input.inputbox, #modlgn-passwd, #modlgn-username {
-    width: 80%;
+    width: 100%;
     margin-left: 0;
-    padding: 6px;
-    padding-right: 24px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    border: 1px solid #e2e2e2;
+    padding: 6px 12px;
+    border: 0;
     outline: 0;
 }
 
@@ -1165,10 +1206,27 @@ p.counter {
     margin-left: 0;
 }
 
+.login-button, .logout-button .btn {
+    background-color: transparent;
+    border: 1px solid #FFF;
+}
+
+.login-button:hover, .logout-button .btn:hover {
+    color: #225f47;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+}
+
+.login-greeting{
+    color: #FFF;
+    float: left;
+}
+
 #form-login-remember label {
     float: none;
     width: auto;
     display: inline;
+    color: #FFF;
 }
 
 #form-login-remember input.inputbox {
@@ -1200,23 +1258,22 @@ p.counter {
 }
 
 #jform_name, .validate-email, .validate-password, .validate-username {
-    width: 140px;
     margin-left: 0;
-    padding: 6px;
-    padding-right: 24px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
+    padding: 6px 12px;
     border: 1px solid #e2e2e2;
     outline: 0;
+}
+
+.nav-tabs {
+    border: 0;
 }
 
 .icon-user {
     display: none;
 }
 
-#form-login-remember, .userdata label {
-    margin-top: 9px;
+#form-login-remember {
+    float: left;
 }
 
 .icon-lock.tip {
@@ -1283,12 +1340,6 @@ fieldset div div input {
 .btn-toolbar li {
     display: inline;
     margin-left: -30px;
-}
-
-.moduletable-full-logos {
-    width: 1170px;
-    display: table;
-    margin: 60px auto;
 }
 
 h3.pane-toggler {
@@ -1506,6 +1557,7 @@ a.feed-link {
 #footer_wrap {
     width: 100%;
     display: table;
+    margin-bottom: 60px;
 }
 
 .footer {
@@ -1515,17 +1567,39 @@ a.feed-link {
 }
 
 .footer h3 {
-    font-size: 24px;
-    padding: 10px 0 6px 0;
-    background-image: url('../../../images/backtitle.png');
-    background-position: center;
-    background-repeat: no-repeat;
     text-align: center;
-    line-height: 1;
     text-transform: uppercase;
-    color: #e28f27;
-    margin: 0;
-    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.moduletable-fisiohomemais img {
+    margin-right: 30px;
+}
+
+.moduletable-fisiohomemais h3 a {
+    color: #67666a;
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #1c563f, #49ac8d);
+    border-image-slice: 1;
+    padding-bottom: 5px;
+}
+
+.moduletable-fisiohomemais p {
+    text-align: justify;
+}
+
+.moduletable-fisiohomemais p.readmore {
+    text-align: right;
+}
+
+.moduletable-fisiohomemais p.readmore a {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: underline;
 }
 
 .custom-address p {
@@ -1566,9 +1640,7 @@ a.feed-link {
 #box_wrap {
     width: 100%;
     display: table;
-    background-color: #e07701;
-    background-position: top center;
-    background-size: cover;
+    background-color: #225f47;
 }
 
 .overlayer {
@@ -1618,6 +1690,15 @@ a.feed-link {
     margin: 0;
     padding: 0;
     float: right;
+}
+
+.moduletable-buonavita {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.moduletable-buonavita img {
+    filter: brightness(0) invert(1);
 }
 
 #adminForm.form-validate fieldset {
@@ -1881,49 +1962,12 @@ body.contentpane a:hover {
     text-decoration: none;
 }
 
-.moduletable-localizacao {
-    padding: 60px 0;
+.moduletable-contato {
     display: table;
     margin: auto;
 }
 
-.moduletable-localizacao h3 {
-    color: #fff;
-    font-family: 'Montserrat';
-    font-size: 30px;
-    text-decoration: none;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.custom-localizacao h4 {
-    color: #fff;
-    font-family: 'Montserrat';
-    font-size: 18px;
-    text-decoration: none;
-    text-align: center;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-.custom-localizacao p {
-    color: #fff;
-    font-family: 'Montserrat';
-    font-size: 18px;
-    text-decoration: none;
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: 400;
-    line-height: 1.2;
-}
-
-.moduletable-contato-footer {
-    display: table;
-    margin: auto;
-}
-
-.moduletable-contato-footer h3 {
+.moduletable-contato h3 {
     color: #fff;
     font-size: 30px;
     font-weight: bold;
@@ -1932,7 +1976,7 @@ body.contentpane a:hover {
     text-transform: uppercase;
 }
 
-.custom-contato-footer p {
+.custom-contato p {
     color: #fff;
     font-size: 20px;
     text-decoration: none;
@@ -1941,101 +1985,10 @@ body.contentpane a:hover {
     line-height: 1.2;
 }
 
-.moduletable-newsletter h3 {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.acysubbuttons {
-    margin: 0;
-}
-
-.moduletable-newsletter {
-    padding: 0;
-    display: table;
-    margin: auto;
-    width: 90%;
-}
-
-.moduletable-newsletter .acym_introtext {
-    color: #fff;
-    font-family: 'Montserrat';
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.acym_module_form .onefield {
-    margin: 0 !important;
-}
-
-.acym_module_form input {
-    width: 100%;
-    max-width: 100% !important;
-    padding: 2px 10px;
-    border: 0;
-    margin-bottom: 5px;
-    font-family: 'Montserrat';
-    font-size: 18px;
-}
-
-.moduletable-newsletter .subbutton {
-    color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    width: auto!important;
-    background-color: transparent;
-    border: 1px solid #FFF;
-    padding: 8px 20px 5px 20px;
-    border-radius: 0;
-    float: right;
-    cursor: pointer;
-    font-weight: 700;
-}
-
-.moduletable-newsletter .subbutton:hover {
-    color: #e07701;
-    background-color: #FFF;
-}
-
-.custom-mudapravida-home {
-    width: 100%;
-    display: table;
-}
-
-.custom-mudapravida-home>div {
-    width: 1170px;
-    margin: 60px auto;
-    display: table;
-}
-
-.custom-banner {
-    width: 100%;
-    display: table;
-    height: 350px;
-}
-
-.custom-banner>div {
-    width: 1000px;
-    display: table;
-    margin: auto;
-}
-
-.custom-banner h1 {
-    text-align: right;
-    margin: 250px 20px 0 0;
-    line-height: 1em;
-    color: #fff;
-    font-size: 50px;
-    text-transform: uppercase;
-    text-shadow: 0 0 7px #000;
-}
-
-.item-page-home p {
-    font-size: 24px;
+.item-page-home {
+    background-image: url("../../../images/buona_vita_back.png");
+    background-repeat: no-repeat;
+    background-position: center 100px;
     text-align: justify;
 }
 
@@ -2044,7 +1997,10 @@ body.contentpane a:hover {
 }
 
 a.readmore-link-c {
-    margin: 20 0 0 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-decoration: underline;
 }
 
 .item-page-quem-somos .img-fulltext-right {
@@ -2063,156 +2019,6 @@ a.readmore-link-c {
     margin: 0 0 10px 0;
 }
 
-.blog-depoimentos h2 {
-    font-family: 'Montserrat';
-    color: #003c21;
-    text-decoration: none;
-    line-height: 1;
-    font-size: 22px;
-}
-
-.blog-depoimentos h4 {
-    font-family: 'Montserrat';
-    color: #003c21;
-    text-decoration: none;
-    line-height: 1;
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.blog-depoimentos p {
-    line-height: 1.2;
-    color: #333;
-    font-family: 'Montserrat';
-    font-size: 18px;
-    margin: 0 0 10px 0;
-}
-
-.blog-depoimentos .img-intro-right {
-    width: 200px;
-    height: 267px;
-    overflow: hidden;
-    box-shadow: -2px 2px 4px #000;
-    margin: 0 0 10px 10px;
-}
-
-.blog-depoimentos .img-intro-right img {
-    height: 267px;
-}
-
-.blog-depoimentos article {
-    padding-bottom: 20px;
-}
-
-.menu-informe-se {
-    list-style: none;
-    padding: 0;
-    width: 1000px;
-    margin: 10px auto;
-}
-
-.menu-informe-se li {
-    float: left;
-    border-right: 1px solid #bcd1a1;
-    padding: 5px 45px;
-}
-
-.menu-informe-se li:last-child {
-    border-right: 0;
-}
-
-.menu-informe-se li.active a {
-    font-family: 'Montserrat';
-}
-
-.menu-informe-se li.active a:hover {
-    color: #003c21;
-}
-
-.menu-informe-se li a {
-    color: #003c21;
-    font-family: 'Montserrat';
-    font-size: 24px;
-    line-height: 1.2;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.menu-informe-se li a:hover {
-    color: #437a0e;
-}
-
-.blog-noticias-agriculas .img-intro-right, .item-page-noticias-agriculas .img-fulltext-right {
-    width: 300px;
-    height: 200px;
-    overflow: hidden;
-    margin: 0 10px 30px 30px;
-    box-shadow: 2px 2px 10px #000;
-}
-
-.blog-noticias-agriculas .img-intro-right img, .item-page-noticias-agriculas .img-fulltext-right img {
-    height: 100%;
-}
-
-.blog-noticias-agriculas h2 a, .item-page-noticias-agriculas h2 {
-    color: #003c21;
-    font-family: 'Montserrat';
-    font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
-}
-
-.blog-noticias-agriculas .published, .item-page-noticias-agriculas .published {
-    color: #003c21;
-    font-family: 'Montserrat';
-    font-size: 14px;
-}
-
-.blog-noticias-agriculas dl.article-info, .item-page-noticias-agriculas dl.article-info {
-    margin-bottom: 15px;
-}
-
-.blog-noticias-agriculas h4, .item-page-noticias-agriculas h4 {
-    color: #003c21;
-    font-family: 'Montserrat';
-    font-size: 18px;
-    line-height: 1.2;
-    text-decoration: none;
-    margin: 0 0 15px 0;
-}
-
-.blog-noticias-agriculas p, .item-page-noticias-agriculas p {
-    line-height: 1.2;
-    color: #333;
-    font-family: 'Montserrat';
-    font-size: 18px;
-    margin: 0 0 10px 0;
-}
-
-.blog-noticias-agriculas .readmore {
-    padding: 8px;
-    background-color: #003c21;
-    float: right;
-    margin-top: 6px;
-}
-
-.blog-noticias-agriculas .readmore a {
-    color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-    font-weight: 400;
-}
-
-.blog-noticias-agriculas article {
-    margin-bottom: 100px;
-}
-
-.item-page-noticias-agriculas h5 {
-    font-family: 'Montserrat';
-    color: #003c21;
-    font-size: 14px;
-}
-
 .pager .next, .pager .previous {
     display: table;
 }
@@ -2225,69 +2031,6 @@ a.readmore-link-c {
     padding: 8px;
     background-color: #003c21;
     border-radius: 0;
-}
-
-.blog-informe-cisbra .items-leading {
-    margin-top: 60px;
-}
-
-.blog-informe-cisbra .category-desc p {
-    line-height: 1.2;
-    color: #333;
-    font-family: 'Montserrat';
-    font-size: 18px;
-    margin: 0 0 10px 0;
-}
-
-.blog-informe-cisbra article {
-    width: 220px;
-    height: 220px;
-    float: left;
-    margin: 0 40px 40px 0;
-    overflow: hidden;
-    position: relative;
-}
-
-.blog-informe-cisbra article:nth-child(12), .blog-informe-cisbra article:nth-child(16), .blog-informe-cisbra article:nth-child(4), .blog-informe-cisbra article:nth-child(8) {
-    margin-right: 0;
-}
-
-.blog-informe-cisbra article p {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    margin: 0;
-    line-height: 0;
-    text-align: center;
-}
-
-.blog-informe-cisbra article img {
-    height: 100%;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-}
-
-.blog-informe-cisbra article:hover img {
-    transition: linear .2s;
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-}
-
-.blog-informe-cisbra article a {
-    width: 100%;
-    background: url(../../../images/download.png) no-repeat 95% center;
-    background-color: rgba(0, 50, 0, .7);
-    text-decoration: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 20px 0;
-    line-height: 1;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Montserrat';
-    font-size: 24px;
 }
 
 .titulo-contato h2 {
@@ -2314,7 +2057,7 @@ a.readmore-link-c {
 }
 
 .contact-form textarea {
-    height: 184px;
+    height: 152px;
     margin-bottom: 0;
 }
 
@@ -2549,10 +2292,6 @@ a.readmore-link-c {
         width: 100%;
         margin-bottom: 60px;
     }
-    .moduletable-newsletter {
-        width: 60%;
-        min-width: 300px;
-    }
 }
 
 @media screen and (max-width:768px) {
@@ -2631,9 +2370,6 @@ a.readmore-link-c {
         font-size: 30px;
         margin: 50px 20px 50px 0;
     }
-    .moduletable-banner {
-        background-size: 100% 100%;
-    }
     #leftmenu {
         width: 100%;
         margin: 0;
@@ -2672,7 +2408,7 @@ a.readmore-link-c {
     .titulo-contato h2 {
         font-size: 16px;
     }
-    #contact-form button.validate, #login-form input.button, #mailto-window button, #member-profile button.validate, #member-registration button.validate, #searchForm button, #user-registration button.validate, .btn, .login button, .logout button {
+    #contact-form button.validate, #mailto-window button, #member-profile button.validate, #member-registration button.validate, #searchForm button, #user-registration button.validate, .btn, .login button, .logout button {
         font-size: 14px;
     }
     .contact-form input, .contact-form textarea {
@@ -2690,7 +2426,7 @@ a.readmore-link-c {
     #box_placeholder {
         margin: 40px auto;
     }
-    .moduletable-contato-footer h3 {
+    .moduletable-contato h3 {
         font-size: 24px;
     }
     #box1, #box2, #box3 {

@@ -1,4 +1,7 @@
 jQuery(document).ready(function ($) {
+
+  
+
   /*MENU RESPONSIVO*/
   $(".menuresp li.parent > a, .menuresp li.parent > span").append(
     ' <button type="button"><i class="fas fa-chevron-down"></i></button>'
@@ -12,8 +15,7 @@ jQuery(document).ready(function ($) {
       .toggleClass("fa-chevron-up", "fa-chevron-down");
   });
 
-  $(window)
-    .on("resize", function () {
+  $(window).on("resize", function () {
       $(".menuresp").css(
         "max-height",
         $(window).height() - $("#header").height()
@@ -26,13 +28,21 @@ jQuery(document).ready(function ($) {
           $("#nav-icon").removeClass("open");
         }
       });
-    })
-    .trigger("resize");
+  }).trigger("resize");
 
   $(".menuresp").hide();
 
   $("#gotomenu").click(function () {
     $(".menuresp").slideToggle();
   });
+
+});
+
+
+jQuery(window).load(function () {
+
+  jQuery(window).on("resize", function () {
+    jQuery('#header_wrap').next().css('padding-top', jQuery('#header_wrap').outerHeight());
+  }).trigger("resize");
 
 });
