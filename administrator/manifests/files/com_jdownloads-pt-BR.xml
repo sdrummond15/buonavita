@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="file" method="upgrade" version="2.5">
+    <name>com_jdownloads - pt-BR</name>
+    <version>2021-03-17-11-35-55</version>
+    <creationDate>17.03.2021</creationDate>
+    <author>Arno Betz</author>
+    <authorEmail>info@jdownloads.com</authorEmail>
+    <authorUrl>http://www.jdownloads.com</authorUrl>
+    <copyright>© 2007-2021 - www.jDownloads.com. All rights reserved!</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <packager>CTransifex</packager>
+    <packagerurl>https://compojoom.com</packagerurl>
+    <description>
+        <![CDATA[This package was auto generated with CTransifex(https://compojoom.com). We've grabbed the latest language files for our extension from transifex.com.
+        Special thanks to OpenTranslators (http://opentranslators.org) for helping us with this translation!]]>
+    </description>
+    <fileset>
+        <files folder="admin" target="administrator/language/pt-BR"><filename>pt-BR.com_jdownloads.ini</filename>
+<filename>pt-BR.com_jdownloads.sys.ini</filename>
+<filename>pt-BR.mod_jdownloads_admin_monitoring.ini</filename>
+<filename>pt-BR.mod_jdownloads_admin_monitoring.sys.ini</filename>
+<filename>pt-BR.mod_jdownloads_admin_stats.ini</filename>
+<filename>pt-BR.mod_jdownloads_admin_stats.sys.ini</filename>
+<filename>pt-BR.mod_jdownloads_featured.ini</filename>
+<filename>pt-BR.mod_jdownloads_featured.sys.ini</filename>
+<filename>pt-BR.mod_jdownloads_last_updated.ini</filename>
+<filename>pt-BR.mod_jdownloads_last_updated.sys.ini</filename>
+<filename>pt-BR.mod_jdownloads_latest.ini</filename>
+<filename>pt-BR.mod_jdownloads_latest.sys.ini</filename>
+<filename>pt-BR.mod_jdownloads_most_recently_downloaded.ini</filename>
+<filename>pt-BR.mod_jdownloads_most_recently_downloaded.sys.ini</filename>
+<filename>pt-BR.mod_jdownloads_rated.ini</filename>
+<filename>pt-BR.mod_jdownloads_rated.sys.ini</filename>
+<filename>pt-BR.mod_jdownloads_related.ini</filename>
+<filename>pt-BR.mod_jdownloads_related.sys.ini</filename>
+<filename>pt-BR.mod_jdownloads_stats.ini</filename>
+<filename>pt-BR.mod_jdownloads_stats.sys.ini</filename>
+<filename>pt-BR.mod_jdownloads_top.ini</filename>
+<filename>pt-BR.mod_jdownloads_top.sys.ini</filename>
+<filename>pt-BR.mod_jdownloads_tree.ini</filename>
+<filename>pt-BR.mod_jdownloads_tree.sys.ini</filename>
+<filename>pt-BR.mod_jdownloads_view_limits.ini</filename>
+<filename>pt-BR.mod_jdownloads_view_limits.sys.ini</filename>
+<filename>pt-BR.plg_content_jdownloads.ini</filename>
+<filename>pt-BR.plg_content_jdownloads.sys.ini</filename>
+<filename>pt-BR.plg_content_jdownloads_tags_fix.ini</filename>
+<filename>pt-BR.plg_content_jdownloads_tags_fix.sys.ini</filename>
+<filename>pt-BR.plg_jdownloads_example.ini</filename>
+<filename>pt-BR.plg_jdownloads_example.sys.ini</filename>
+<filename>pt-BR.plg_search_jdownloads.ini</filename>
+<filename>pt-BR.plg_search_jdownloads.sys.ini</filename>
+<filename>pt-BR.plg_system_jdownloads.ini</filename>
+<filename>pt-BR.plg_system_jdownloads.sys.ini</filename></files>
+        <files folder="frontend" target="language/pt-BR"><filename>pt-BR.com_jdownloads.ini</filename>
+<filename>pt-BR.plg_editors-xtd_jdownloads.ini</filename>
+<filename>pt-BR.plg_editors-xtd_jdownloads.sys.ini</filename></files>
+    </fileset>
+</extension>
