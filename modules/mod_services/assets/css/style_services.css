@@ -14,7 +14,7 @@
     display: table;
 }
 
-.service-separator .services{
+.service-separator .services {
     width: 1170px;
     margin: 0 auto;
     display: table;
@@ -86,33 +86,20 @@
 }
 
 @media screen and (max-width: 1200px) {
-    #services {
+    .service-separator .services {
         width: 100%;
-    }
-    #services .service {
-        width: calc(25% - 10px);
-        margin: 0 5px;
     }
 }
 
-@media screen and (max-width: 1024px) {
-    #services .service {
-        width: calc(33.33% - 20px);
-        margin: 0 10px 30px 10px;
-    }
-}
+@media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 768px) {
     #modservices {
         margin-bottom: 10px;
     }
-    #services {
-        background-image: none;
+    .service-separator .service {
+        width: 100%;
         padding: 40px 0;
-    }
-    #services .service {
-        width: calc(50% - 10px);
-        margin: 0 5px 20px 5px;
     }
     #services .service .item-service a {
         padding: 0;
@@ -126,8 +113,11 @@
 }
 
 @media screen and (max-width: 480px) {
-    #services .service {
-        margin: 0 0 20px 0;
-        width: 100%;
+    .service .item-service a.img-service {
+        width: 150px;
+        height: 150px;
+    }
+    .service .item-service h1 a {
+        font-size: 16px;
     }
 }

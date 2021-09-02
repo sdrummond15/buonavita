@@ -5,7 +5,7 @@
 }
 
 #banner-int .banner-img {
-    width: 60%;
+    width: 70%;
     height: 100%;
     display: table;
     background-image: url("../../../../images/banners/buona_vita_banner.jpg");
@@ -17,11 +17,11 @@
     top: 0;
 }
 
-#banner-int .banner-img.banner-fisioterapia{
+#banner-int .banner-img.banner-fisioterapia {
     background-image: url("../../../../images/banners/fisioterapia.jpg");
 }
 
-#banner-int .banner-fix{
+#banner-int .banner-fix {
     width: 50%;
     height: 100%;
     display: table;
@@ -56,37 +56,41 @@
 
 @media screen and (max-width: 1200px) {
     .banner-int {
-        width: 100%;
+        float: right;
+        width: 80%;
+    }
+    .banner-int h1 {
+        font-size: 40px;
     }
 }
 
 @media screen and (max-width: 1000px) {
-
+    #banner-int .banner-fix {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .banner-int {
-        height: 20vh;
+        height: 25vh;
         min-height: 150px;
     }
-
-    .banner-int h1 {
-        font-size: 40px;
+    #banner-int .banner-fix {
+        width: 70%;
     }
-
-}
-
-@media screen and (max-width: 600px) {
-
+    .banner-int h1 {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .banner-int {
-        height: 25vh;
-        min-height: 200px;
+        height: 20vh;
     }
-
+    #banner-int .banner-fix {
+        width: 80%;
+    }
     .banner-int h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
 }

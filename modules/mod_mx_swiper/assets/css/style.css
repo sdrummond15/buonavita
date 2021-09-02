@@ -1043,4 +1043,7 @@ button.swiper-pagination-bullet {
   .slider .swiper-container .swiper-slide .inner p, .slider .swiper-container .swiper-button-prev, .slider .swiper-container .swiper-button-line, .slider .swiper-container .swiper-button-next, .slider .swiper-container .swiper-pagination-fraction {
     display: none;
   }
+  .slider .swiper-container .swiper-slide .inner h2 {
+    font-size: 30px;
+}
 }

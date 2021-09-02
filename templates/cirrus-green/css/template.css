@@ -316,7 +316,7 @@ ol, ul {
     margin-bottom: 6px;
 }
 
-ol li, ul li{
+ol li, ul li {
     margin-bottom: 3px;
 }
 
@@ -403,7 +403,8 @@ p.link-c {
 
 #logo {
     display: table;
-    margin: 10px auto;
+    margin: 10px 50%;
+    transform: translateX(-50%);
 }
 
 #logo a {
@@ -542,6 +543,7 @@ p.link-c {
 #topmenu li {
     flex: 1;
     text-align: center;
+    margin: 0;
 }
 
 #topmenu li ul {
@@ -1217,7 +1219,7 @@ p.counter {
     border: 1px solid #FFF;
 }
 
-.login-greeting{
+.login-greeting {
     color: #FFF;
     float: left;
 }
@@ -2067,24 +2069,28 @@ a.readmore-link-c {
     display: none;
     position: absolute;
     visibility: hidden;
-    right: 30px;
-    bottom: 1px;
+    right: 0;
+    bottom: 5px;
 }
 
 #gotomenu {
     padding: 3px 8px;
     border-radius: 5px;
-    background-color: transparent;
-    border: 1px #FFF solid;
+    background-color: #2d6d54;
     cursor: pointer;
     display: table;
     line-height: 1;
+}
+
+#gotomenu:hover {
+    background-color: #1a533d;
 }
 
 #gotomenu i {
     font-size: 24px;
     color: #fff;
     vertical-align: text-bottom;
+    text-align: center;
 }
 
 .menuresp {
@@ -2097,7 +2103,6 @@ a.readmore-link-c {
     list-style: none;
     padding: 10px 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.5);
     display: block;
 }
 
@@ -2113,10 +2118,15 @@ a.readmore-link-c {
     width: 100%;
     text-align: center;
     transition: 300ms all;
+    margin: 0;
 }
 
 .menuresp ul li:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #2d6d54;
+}
+
+.menuresp ul li:hover a, .menuresp ul li:hover span {
+    color: #FFF;
 }
 
 .menuresp ul li img {
@@ -2127,7 +2137,7 @@ a.readmore-link-c {
     border: 0;
     background-color: transparent;
     padding: 0;
-    color: #FFF;
+    color: #2d6d54;
     cursor: pointer;
 }
 
@@ -2141,18 +2151,18 @@ a.readmore-link-c {
 }
 
 .menuresp li.active a, .menuresp li.active span {
-    color: #FFF;
+    color: #2d6d54;
     font-weight: 600;
 }
 
 .menuresp a, .menuresp span {
     text-align: center;
-    color: #FFF;
+    color: #2d6d54;
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 18px;
     text-decoration: none;
-    margin: 0 0 3px 0;
+    margin: 0;
     padding: 5px 0;
     width: 100%;
     display: table;
@@ -2173,37 +2183,8 @@ a.readmore-link-c {
     background-color: transparent;
 }
 
-.color-grey {
-    color: #504f51!important;
-}
-
-.color-grey:hover {
-    color: #2f2a29!important;
-}
-
-.border-blue {
-    border-color: #004b81!important;
-}
-
-.color-blue {
-    color: #004b81!important;
-}
-
-.color-blue:hover {
-    color: #003e6b!important;
-}
-
-.btn-cotacao.color-blue:hover {
-    color: #FFF!important;
-    background-color: #004b81!important;
-}
-
-#topmenu a.border-grey {
-    border-color: transparent!important;
-}
-
-#topmenu a.border-grey:hover {
-    border-color: #2f2a29!important;
+.menuresp span:hover button i  {
+    color: #FFF;
 }
 
 .btn.btn-logo-rodape {
@@ -2253,7 +2234,6 @@ a.readmore-link-c {
     #content-w3 {
         width: 100%;
         float: none;
-        margin: 0 auto 60px auto;
     }
     .custom-banner {
         width: 100%;
@@ -2281,7 +2261,7 @@ a.readmore-link-c {
         visibility: visible;
     }
     .item-page-home p {
-        font-size: 20px;
+        font-size: 16px;
     }
     #footer {
         width: 100%;
@@ -2303,12 +2283,6 @@ a.readmore-link-c {
     }
     li {
         font-size: 16px;
-    }
-    #logo {
-        padding: 10px 0;
-    }
-    #logo a img {
-        width: 320px;
     }
     .item-page-home .img-fulltext-right {
         float: none;
@@ -2390,6 +2364,10 @@ a.readmore-link-c {
     #leftmenu a, #rightmenu a {
         font-size: 16px;
     }
+    #content-w3 {
+        margin: 0 auto 30px auto;
+        padding-top: 30px;
+    }
     #content-w2 {
         width: 96%;
         margin-left: auto;
@@ -2432,41 +2410,21 @@ a.readmore-link-c {
     #box1, #box2, #box3 {
         margin-bottom: 30px;
     }
+    .moduletable-fisiohomemais img {
+        float: none !important;
+        margin: 0 auto 10px auto;
+    }
 }
 
 @media screen and (max-width:600px) {
-    #logo {
-        padding: 15px 0 0 0;
-    }
-    #logo a img {
-        width: 240px;
-    }
-    #gotomenu {
-        padding: 1px 6px;
-        line-height: 0.8;
-    }
-    #gotomenu i {
-        font-size: 20px;
-    }
     .copyrightint {
         font-size: 12px;
     }
 }
 
 @media screen and (max-width:480px) {
-    #logo {
-        width: 100%;
-        padding: 8px 0;
-    }
-    #logo a {
-        margin: auto;
-    }
     .menutop {
         width: 100%;
-    }
-    #search_wrap {
-        width: auto;
-        float: left;
     }
     .copyrightint {
         font-size: 10px;
