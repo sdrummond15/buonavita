@@ -2411,6 +2411,7 @@ a.readmore-link-c {
         margin-bottom: 30px;
     }
     .moduletable-fisiohomemais img {
+        max-width: 80%;
         float: none !important;
         margin: 0 auto 10px auto;
     }
